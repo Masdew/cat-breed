@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Ciri Fisik Spesifik Kucing Angora, Persia, Ragdoll, dan Bengal{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/artikel.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="article-content">
+    <h2 class="text-center mb-4">Ciri Fisik Spesifik Kucing Angora, Persia, Ragdoll, dan Bengal</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Kucing Angora</h3>
+            <ul>
+                <li><strong>Mata:</strong> Bentuk almond, bisa heterokromia (warna mata berbeda).</li>
+                <li><strong>Kaki dan Ekor:</strong> Kaki panjang, ramping; ekor panjang dengan bulu lebat mirip sikat.</li>
+                <li><strong>Telinga:</strong> Besar dengan ujung meruncing, dihiasi bulu halus di ujungnya.</li>
+            </ul>
+
+            <h3>Kucing Persia</h3>
+            <ul>
+                <li><strong>Wajah:</strong> Muka bulat dengan hidung pesek yang memberi tampilan datar.</li>
+                <li><strong>Kaki:</strong> Pendek dan kokoh, cocok dengan tubuhnya yang kekar.</li>
+                <li><strong>Bulu Tebal:</strong> Sangat lebat, terutama di bagian dada, memberi tampilan “berjubah”.</li>
+            </ul>
+
+            <h3>Kucing Ragdoll</h3>
+            <ul>
+                <li><strong>Mata:</strong> Biru cerah, besar, dan ekspresif.</li>
+                <li><strong>Tubuh:</strong> Besar, panjang, fleksibel, dengan warna “bicolor” atau “pointed”.</li>
+                <li><strong>Tekstur Bulu:</strong> Medium hingga panjang, halus, dan tidak mudah kusut.</li>
+            </ul>
+
+            <h3>Kucing Bengal</h3>
+            <ul>
+                <li><strong>Pola Bulu:</strong> Pola tutul atau roset yang menyerupai kucing liar.</li>
+                <li><strong>Bulu Berkilau:</strong> Sering kali memiliki efek “glitter” alami di bawah cahaya.</li>
+                <li><strong>Kepala dan Telinga:</strong> Kepala segitiga, telinga kecil dengan ujung bulat.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

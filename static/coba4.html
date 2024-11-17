@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/logocakar.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <title>KittyClassifier</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white" data-aos="fade-down">
+        <div class="container"> 
+            <a class="navbar-brand" href="#">
+                <img src="img/logocakar.png" class="logo" alt="Logo">
+                <div class="brand-text">
+                    <div class="brand-main">
+                        KittyClassifier
+                    </div>
+                    <div class="brand-subtext">
+                        Know your cat breed
+                    </div>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Beranda</a>
+                    </li>
+                    <!-- Dropdown Menu for Breeds -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="breedsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Breeds
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="breedsDropdown">
+                        <li><a class="dropdown-item" href="#angora">Angora</a></li>
+                        <li><a class="dropdown-item" href="#bengal">Bengal</a></li>
+                        <li><a class="dropdown-item" href="#ragdoll">Ragdoll</a></li>
+                        <li><a class="dropdown-item" href="#siberian">Persian</a></li>
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#edukasi">Edukasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('index') }}">Prediksi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--hero-->
+    <section id="home" class="bg-cover hero-section" style="background-image: url(img/cover2.jpg);">
+        <div class="overlay"></div>
+        <div class="container text-white text-left">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4" data-aos="zoom-in">"Selamat Datang CatLovers"</h1>
+                    <p class="my-4" data-aos="fade-up">Temukan Fakta Menarik dan Tips Merawat Kucing Kesayanganmu di Sini </p>
+                    <a href="#edukasi" data-aos="fade-up" class="btn btn-main">Get started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Edukasi-->
+    <section id="edukasi" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-intro text-center" data-aos="fade-up">
+                    <h1>Edukasi</h1>
+                    <div class="divider"></div>
+                    
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="edukasi">
+                        <div class="edukasi-img">
+                            <div style= "width: 100%; max-width: 560px;">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/JkKFjdZzfHI" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="edukasi">
+                        <div class="edukasi-img">
+                            <div style="width: 100%; max-width: 560px;">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/eRQwSoyOqY4?start=80" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="edukasi">
+                        <div class="edukasi-img">
+                            <div style="width: 100%; max-width: 560px;">
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/k-N8NxTq1u4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div>
+                        <img src="img/makan.jpg" alt="" />
+                        <h4>Nutrisi Makanan Kucing</h4>
+                        <p>Nutrisi pada makanan kucing sangat penting untuk kita ketahui agar kucing kesayangan kita tetap sehat dan bugar, Tekan tombol untuk lebih lanjut</p>
+                        <a href="artikel1.html" class="cat-paw-button">
+                            <i class="fas fa-paw"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="edukasi">
+                        <div>
+                            <img src="img/scabies.jpg" alt="" />
+                            <h4>Gangguan Scabies</h4>
+                            <p>Scabies pada kucing adalah penyakit kulit yang disebabkan oleh tungau yang menggali ke dalam kulit kucing. Tungau ini disebut Sarcoptes scabiei atau Notoedres cati, Tekan tombol untuk lebih lanjut</p>
+                            <a href="artikel2.html" class="cat-paw-button">
+                                <i class="fas fa-paw"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="zoom-in">
+                    <div class="edukasi">
+                        <div>
+                            <img src="img/tumbuh.jpg" alt="" />
+                            <h4>Perkembangan Kucing</h4>
+                            <p>Penting untuk kita mengetahui usia pada kucing agar sesuai dengan perawatan nya, Tekan tombol untuk lebih lanjut</p>
+                            <a href="artikel3.html" class="cat-paw-button">
+                                <i class="fas fa-paw"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+
+    <!--kontak-->
+    <section id="kontak" class="bg-cover text-white" style="background-image: url(img/cover1.1.jpeg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+            <div class="col-12 section-intro text-center" data-aos="fade-up">
+                <h1>Tentang</h1>
+                <div class="divider"></div>
+                <p>"Anda bisa mengenal kami lebih jauh dengan menghubungi informasi kontak di bawah ini" 
+                   
+                </p>
+                    
+                   
+                <div class="footer-left">
+                    <h1>Active Hours</h1>
+                    <p><i class="fa fa-clock"></i> Senin - Jumat (08.00 - 17.00)</p>
+                    <p><i class="fa fa-clock"></i> Sabtu 09.00 - 17.00 </p>
+                </div>
+                <div class="footer-right">
+                    <h1>Hubungi Kami</h1>
+                    <p>dewarinjani07@gmail.com<i class="fa-regular fa-envelope"> </i>
+                    <p>(+62) 812-9715-4661 <i class="fa fa-phone"></i>
+                </div>
+                    
+                
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+<footer class="py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0">© 2024 KittyClassifier.  All rights reserved · Developed by DAR</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <div>
+                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

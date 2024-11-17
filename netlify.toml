@@ -1,0 +1,5 @@
+[build]
+  functions = "netlify-functions"  # Lokasi folder yang berisi fungsi serverless Anda
+
+[context.production.environment]
+  FLASK_ENV = "production"  # Menetapkan variabel lingkungan untuk mode produksi

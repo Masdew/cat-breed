@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/artikel.css') }}">
+{% endblock %}
+
+{% block title %}Tahap Perkembangan Kucing{% endblock %}
+
+{% block content %}
+<h1 class="text-center mb-4">Tahap Perkembangan Kucing</h1>
+
+<div class="article-card">
+    <h3>Masa Neonatal (0-4 Minggu)</h3>
+    <p>Anak kucing baru lahir biasanya memiliki berat sekitar 100 – 150 gr di minggu pertama. Mereka belum bisa buang air kecil atau besar tanpa bantuan induknya. Mata mereka akan mulai terbuka pada usia 7-10 hari, meski masih buram. Pada usia 2-4 minggu, mereka mulai berjalan keluar dari tempat tidur, meskipun masih tertatih-tatih. Gigi taring mulai muncul pada usia 3-4 minggu.</p>
+</div>
+
+<div class="article-card">
+    <h3>Masa Penyapihan</h3>
+    <p>Proses penyapihan selesai pada usia 6-8 minggu. Warna iris mata permanen muncul pada usia 6-7 minggu, meskipun beberapa kucing tidak mengalami perubahan warna. Pada usia 8 minggu, anak kucing menjadi lebih aktif dan dapat menerima vaksinasi pertamanya.</p>
+</div>
+
+<div class="article-card">
+    <h3>Pertumbuhan Intensif (2-4 Bulan)</h3>
+    <p>Di usia 12 dan 16 minggu, kucing menerima vaksin seperti Feline Calicivirus dan Feline Panleukopenia. Makanan komersil khusus anak kucing mulai diberikan pada tahap ini, serta air minum yang cukup untuk mendukung pertumbuhan mereka.</p>
+</div>
+
+<div class="article-card">
+    <h3>Pertumbuhan Berkelanjutan (Di Atas 4 Bulan)</h3>
+    <p>Pada usia 4 bulan, gigi seri dewasa mulai tumbuh dan hormon kucing mempengaruhi perubahan suara mereka. Pertumbuhan berlanjut hingga usia 6 bulan, di mana kekebalan tubuh kucing mulai sempurna. Mereka mencapai bentuk tubuh dewasa pada usia 1 tahun, dengan pertumbuhan maksimal terjadi pada usia 2 tahun.</p>
+</div>
+{% endblock %}

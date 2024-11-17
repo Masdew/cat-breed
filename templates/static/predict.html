@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Prediksi Kucing{% endblock %}
+
+{% block content %}
+<!-- Bungkus bagian konten utama di dalam .container dengan padding-top -->
+<div class="container mt-5 pt-5">
+    <!-- Bagian Upload Prediksi -->
+    <section id="prediksi">
+        <div class="container">
+            <h1 class="text-center">Cat Breed Classifier</h1>
+            <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <input type="file" name="file" accept="image/*" class="form-control" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Upload and Predict</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bagian Hasil Prediksi -->
+    {% if result %}
+    <section id="hasil-prediksi" class="text-center mt-4" style="margin-top: 50px;">
+        <h2>Hasil Prediksi</h2>
+        <p>Prediksi: <strong>{{ result }}</strong></p>
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Hasil Prediksi" 
+                 class="img-fluid rounded" 
+                 style="width: 60%; max-width: 400px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        </div>
+    </section>
+    {% endif %}
+</div>
+{% endblock %}

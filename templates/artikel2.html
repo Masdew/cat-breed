@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Gejala Awal Scabies dan Cara Mengatasinya{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/artikel.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="article-content">
+    <h2 class="text-center mb-4">Gejala Awal Scabies dan Cara Mengatasinya pada Kucing</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Penyebab Scabies</h3>
+            <p>Scabies adalah penyakit kulit pada kucing yang disebabkan oleh tungau parasit bernama <em>Sarcoptes scabiei</em>. Faktor-faktor yang dapat meningkatkan kemungkinan kucing terkena scabies antara lain:</p>
+            <ul>
+                <li>Kontak langsung dengan kucing yang terinfeksi</li>
+                <li>Lingkungan yang tidak higienis</li>
+                <li>Sistem kekebalan tubuh yang lemah</li>
+            </ul>
+            <h3>Gejala Awal Scabies</h3>
+            <ul>
+                <li>Sering menggaruk, menggigit, atau menjilat tubuh</li>
+                <li>Bulu rontok atau pitak</li>
+                <li>Kulit iritasi dan kemerahan</li>
+                <li>Kulit berkerak atau berkerut, terutama pada area telinga</li>
+                <li>Terdapat luka atau koreng pada kulit</li>
+            </ul>
+            <p>Gejala awal scabies biasanya muncul pada telinga atau area wajah kucing dan dapat menyebar ke bagian tubuh lainnya jika tidak segera diobati.</p>
+
+            <h3>Cara Mengatasi Scabies</h3>
+            <p>Jika kucingmu terkena scabies, berikut cara mengatasinya:</p>
+            <ol>
+                <li><strong>Bawa ke Dokter Hewan</strong> - Dokter akan mendiagnosis dengan memeriksa sampel kulit untuk mengidentifikasi tungau penyebab scabies.</li>
+                <li><strong>Pemberian Obat-obatan</strong> - Dokter bisa meresepkan obat antiparasit seperti ivermectin yang diminum, dioles, atau disuntikkan. Obat ini akan disesuaikan dengan jenis tungau dan tingkat keparahan scabies.</li>
+                <li><strong>Penggunaan Sampo Antitungau</strong> - Dokter mungkin juga akan merekomendasikan sampo khusus untuk membantu meredakan peradangan dan menenangkan luka pada kulit kucing.</li>
+            </ol>
+            <p>Dengan perawatan yang tepat, kucing biasanya akan sembuh total dalam waktu sekitar 1 bulan setelah pengobatan dimulai.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

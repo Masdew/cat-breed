@@ -1,0 +1,134 @@
+body {
+    padding-top: 25px; 
+    display: flex;
+    flex-direction: column;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+    padding-top: 80px;
+}
+section#artikel {
+    padding-top: 0;
+}
+.navbar {
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    background: -webkit-linear-gradient(#00e0fe, #1107fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    background-color: #fff; 
+}
+
+.logo {
+    margin-right: 15px; 
+    width: 38px; 
+    height: auto; 
+}
+
+.brand-text {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.brand-main {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: #000; 
+}
+
+.brand-subtext {
+    font-size: 0.8rem; 
+    color: #6c757d; 
+}
+h1 {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h3 {
+    color: #ff6347;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.article-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+}
+footer p, footer a {
+    color: #000;
+    margin-bottom: 0;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+.social-links i {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.social-links a:hover i {
+    color: #fd0505;
+}
+
+/* Hover effect for links */
+.nav-link:hover {
+    color: #ff6347 !important;
+}
+
+/* Image Header */
+.header-image {
+    background-image: url('img/cat_food_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image h1 {
+    color: #fff;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .header-image h1 {
+        font-size: 2rem;
+    }
+}

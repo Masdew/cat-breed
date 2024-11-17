@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% block title %}Cat Breed Classifier{% endblock %}
+
+{% block content %}
+<!--hero-->
+<section id="home" class="bg-cover hero-section" style="background-image: url('{{ url_for('static', filename='img/cover2.jpg') }}');">
+    <div class="overlay"></div>
+    <div class="container text-white text-left">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-4" data-aos="zoom-in">"Selamat Datang CatLovers"</h1>
+                <p class="my-4" data-aos="fade-up">Temukan Fakta Menarik dan Tips Merawat Kucing Kesayanganmu di Sini </p>
+                <a href="#edukasi" data-aos="fade-up" class="btn btn-main">Get started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bagian Edukasi -->
+<section id="edukasi" class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 section-intro text-center" data-aos="fade-up">
+                <h1>Edukasi</h1>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="edukasi">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/JkKFjdZzfHI" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="edukasi">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/eRQwSoyOqY4?start=80" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="edukasi">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/k-N8NxTq1u4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row g-4 mt-4 justify-content-center">
+            <!-- Image and Text Section -->
+            <div class="col-md-4 edukasi d-flex flex-column align-items-center" data-aos="zoom-in">
+                <img src="{{ url_for('static', filename='img/makan.jpg') }}" alt="Nutrisi Makanan Kucing" class="img-fluid">
+                <h4>Nutrisi Makanan Kucing</h4>
+                <p>Pastikan kucing kesayangan Anda mendapat nutrisi terbaik agar selalu sehat dan aktif! Klik tombol di bawah untuk mengetahui lebih lanjut!.</p>
+                <a href="{{ url_for('artikel1') }}" class="cat-paw-button"><i class="fas fa-paw"></i></a>
+            </div>
+            
+            <div class="col-md-4 edukasi d-flex flex-column align-items-center" data-aos="zoom-in">
+                <img src="{{ url_for('static', filename='img/scabies.jpg') }}" alt="Gangguan Scabies" class="img-fluid">
+                <h4>Gangguan Scabies</h4>
+                <p>Scabies pada kucing adalah masalah kulit yang disebabkan oleh tungau yang menyerang dari dalam. Klik tombol di bawah untuk tahu cara mengatasinya!.</p>
+                <a href="{{ url_for('artikel2') }}" class="cat-paw-button"><i class="fas fa-paw"></i></a>
+            </div>
+            
+            <div class="col-md-4 edukasi d-flex flex-column align-items-center" data-aos="zoom-in">
+                <img src="{{ url_for('static', filename='img/tumbuh.jpg') }}" alt="Perkembangan Kucing" class="img-fluid">
+                <h4>Perkembangan Kucing</h4> 
+                <p>Mengetahui usia kucing sangat penting untuk menyesuaikan perawatan yang tepat. Tekan tombol di bawah untuk tahu lebih lanjut!.</p>
+                <a href="{{ url_for('artikel3') }}" class="cat-paw-button"><i class="fas fa-paw"></i></a>  
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</div>
+</section>
+
+<!-- Bagian Kontak -->
+<section id="kontak" class="bg-cover text-white" style="background-image: url('{{ url_for('static', filename='img/cover1.1.jpeg') }}');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 section-intro text-center" data-aos="fade-up">
+                <h1>Kenali Kami Lebih Dekat</h1>
+                <div class="divider"></div>
+                <p>"Kami siap membantu Anda dengan dedikasi dan kehangatan di setiap langkah perjalanan Anda"</p>
+                
+                <!-- Active Hours -->
+                <div class="footer-left">
+                    <h1>Jam Aktif</h1>
+                    <p><i class="fa fa-clock"></i> Senin - Jumat: 08.00 - 17.00</p>
+                    <p><i class="fa fa-clock"></i> Sabtu: 09.00 - 17.00</p>
+                    <p><small>Di luar jam ini? Kirim email dan kami akan segera merespons.</small></p>
+                </div>
+                
+                <!-- Contact Us -->
+                <div class="footer-right">
+                    <h1>Hubungi Kami</h1>
+                    <p>Email: <a href="mailto:dewarinjani07@gmail.com" class="text-white">dewarinjani07@gmail.com</a> <i class="fa fa-envelope"></i></p>
+                    <p>Telepon: <a href="tel:+6281297154661"class="text-white">(+62) 812-9715-4661</a> <i class="fa fa-phone"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

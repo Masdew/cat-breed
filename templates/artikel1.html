@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/artikel.css') }}">
+{% endblock %}
+
+{% block content %}
+<!-- Header Image -->
+<div>
+    <h1>Nutrisi Makanan untuk Kucing</h1>
+</div>
+
+<!-- Artikel Section -->
+<section id="artikel" class="py-5">
+    <div class="container">
+        <div class="row"> 
+            <div class="col-lg-8 mx-auto">
+                <!-- Card Style -->
+                <div class="article-card">
+                    <h3>1. Protein dari Sumber Hewani</h3>
+                    <p>Protein adalah sumber nutrisi utama kucing yang wajib ada dalam makanannya setiap hari. Apalagi, protein memiliki manfaat untuk menjaga seluruh jaringan dan organ tubuh kucing. 
+                        Selain itu, protein hewani juga dapat meningkatkan kesehatan cakar dan bulu kucing agar tidak rontok dan menipis. Bila kucing kekurangan protein, biasanya mereka jadi kurang lahap saat menyantap makanan sehingga membuatnya jadi kurus dan tidak bertenaga.</p>
+                </div>
+
+                <div class="article-card">
+                    <h3>2. Lemak</h3>
+                    <p>Sama halnya dengan manusia, lemak juga dibutuhkan  oleh kucing untuk sumber energi, memelihara suhu tubuh, dan melarutkan vitamin D, vitamin  A, vitamin E, dan vitamin K.
+                        Oleh karena itu, ada baiknya berikan makanan kucing yang mengandung omega-3 dan omega-6. Apalagi, kucing hanya dapat memperoleh lemak baik tersebut melalui apa yang dikonsumsinya.</p>
+                </div>
+
+                <div class="article-card">
+                    <h3>3. Karbohidrat</h3>
+                    <p>Memang, kelebihan karbohidrat dapat meningkatkan kadar gula darah pada kucing. Apalagi, hewan satu ini tidak benar-benar membutuhkan karbohidrat sebagai sumber energinya utamanya.
+                        Namun, karbohidrat yang seimbang tetap bisa memberikan manfaat, seperti sebagai sumber energi cadangan. Nah, kamu bisa memberikan karbohidrat pada kucing dari biji-bijian, gandum, dan beras.</p>
+                </div>
+
+                <div class="article-card">
+                    <h3>4. Mineral</h3>
+                    <p>Sumber mineral, seperti zat besi dan zinc, juga dibutuhkan untuk menjaga tubuh kucing tetap sehat.
+                        Zat besi dapat membantu memperlancar sirkulasi oksigen dalam tubuh kucing. Sedangkan zinc bermanfaat untuk menangkal radikal bebas dan menjaga kesehatan kulit kucing.
+                        Selain itu, kamu juga perlu memberikan makanan yang mengandung kalsium dan mangan untuk membantu menjaga kesehatan tulang kucing.</p>
+                </div>
+
+                <div class="article-card">
+                    <h3>5. Vitamin</h3>
+                    <p>Kucing juga membutuhkan vitamin, seperti vitamin A, B1, B2, B3, B6, dan D. Soalnya, vitamin tersebut bermanfaat untuk menjaga kesehatan mata, tulang, dan bulu kucing.
+                        Tidak hanya berdampak pada kondisi fisik kucing, kekurangan vitamin juga dapat membuat hewan satu ini jadi gampang stres, lesu, dan mudah lelah ketika beraktivitas.
+                        </p>
+                </div>
+
+                <div class="article-card">
+                    <h3>6. Air</h3>
+                    <p>Sama seperti manusia, tubuh kucing terdiri dari 70% air sehingga ia perlu memperoleh air dari santapan yang dikonsumsinya. Bagi kucing, air bermanfaat untuk membantu proses metabolisme, menghantarkan nutrisi ke seluruh tubuh, dan mengeluarkan racun.
+                        Oleh karena itu, kamu bisa memberikannya makanan basah secara berkala untuk memastikan kebutuhan airnya tercukupi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

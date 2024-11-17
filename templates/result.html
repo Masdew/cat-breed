@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Hasil Prediksi{% endblock %}
+
+{% block content %}
+<div class="container mt-5 pt-5" style="margin-top: 100px;">
+    <h1 class="text-center">Hasil Prediksi</h1>
+    <p class="text-center">Prediksi: <strong>{{ predicted_label }}</strong></p>
+    
+    <!-- Center the image -->
+    <img src="{{ image_path }}" alt="Hasil Prediksi" 
+         class="img-fluid rounded mx-auto d-block" 
+         style="width: 60%; max-width: 400px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+
+    <div class="text-center mt-4 mb-3">
+        <a href="{{ url_for('predict') }}" class="btn btn-primary">Prediksi Lagi</a>
+        <a href="{{ url_for('index') }}" class="btn btn-secondary">Kembali ke Beranda</a>
+        <a href="{{ url_for('feedback') }}" class="btn btn-primary">Kurang Yakin?</a>
+    </div>
+</div>
+{% endblock %}

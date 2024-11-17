@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Prediksi Kucing{% endblock %}
+
+{% block content %}
+<!-- Bagian Upload Prediksi -->
+<section id="prediksi">
+    <div class="container mt-5">
+        <h1 class="text-center">Cat Breed Classifier</h1>
+        <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+            <!-- Pilihan untuk upload file dari penyimpanan lokal -->
+            <div class="mb-3">
+                <label for="file" class="form-label">Upload Image from Your Device:</label>
+                <input type="file" name="file" accept="image/*" class="form-control" id="file">
+            </div>
+            <p class="text-center">or</p>
+            <!-- Pilihan untuk memasukkan URL gambar -->
+            <div class="mb-3">
+                <label for="url" class="form-label">Enter Image URL:</label>
+                <input type="url" name="url" class="form-control" id="url" placeholder="https://example.com/image.jpg">
+            </div>
+            <button type="submit" class="btn btn-primary">Upload or Predict from URL</button>
+        </form>
+    </div>
+</section>
+{% endblock %}
