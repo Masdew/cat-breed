@@ -3,3 +3,4 @@
 
 [context.production.environment]
   FLASK_ENV = "production"  # Menetapkan variabel lingkungan untuk mode produksi
+  PYTHON_VERSION = "3.9"    # Tentukan versi Python yang digunakan
