@@ -5,11 +5,13 @@ from PIL import Image
 import numpy as np
 import requests
 from io import BytesIO
+import os  # Import os untuk environment variables
 
 app = Flask(__name__)
 
-# Load model yang sudah dilatih
-model = load_model(r'C:\Jupyter\modelbaru1.h5')
+# Load model menggunakan path dari environment variables
+model_path = os.getenv('MODEL_PATH', 'modelbaru1.h5')  # Default ke 'modelbaru1.h5'
+model = load_model(model_path)
 
 # Map label ke prediksi
 label_map = {0: 'Angora', 1: 'Persian', 2: 'Ragdoll', 3: 'Bengal'}
