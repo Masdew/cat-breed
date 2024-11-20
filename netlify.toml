@@ -4,3 +4,4 @@
 [context.production.environment]
   FLASK_ENV = "production"  # Menetapkan variabel lingkungan untuk mode produksi
   MODEL_PATH = "path/to/your/modelbaru1.h5"  # Tentukan path ke model Anda
+  PYTHON_VERSION = "3.7"  # Menentukan versi Python yang digunakan
